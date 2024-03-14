@@ -1,0 +1,19 @@
+extends layout
+block content 
+
+ 
+    div.cust
+      div.formulario2
+        h1 Inicio de sesión
+        form(method="post")
+          div.username
+            label(for="username") Nombre de usuario
+            input(type="text", id="username", name="username", required)
+          div.contrasena
+            label(for="password") contraseña
+            input(type="password", id="password", name="password", required)
+            div
+              div.recordar ¿Olvidó su contraseña?
+              input(type="submit", value="Iniciar")
+              
+        

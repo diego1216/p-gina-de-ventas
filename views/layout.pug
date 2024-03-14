@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/styles.css')
+  body
+    nav
+      ul
+        li.nav-item
+          div.car-container
+            a(href='/') Inicio
+        li.nav-item
+          div.car-container
+            a(href='/catalogo') Catálogo de Productos
+        li.nav-item.cart-item 
+          div.car-container
+            a(href='/carrito')
+              img.car-icon(src='/images/carrito.png') 
+              | (#{carrito.length})
+              li.nav-item
+          div.car-container2
+              a(href='/inicio') Ir a Inicio de sesión
+              img.car-icon2(src='/images/usuario.webp') 
+
+    
+
+
+    .container
+      block content
